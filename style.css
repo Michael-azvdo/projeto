@@ -80,7 +80,8 @@ body * {
     z-index: 1;/*faz subir um andar ou camada*/
     transform: translateY(-50%);/*deixa metade para cima eixo y*/
 
-    animation: slide-back 0.2s;
+    animation: slide-back 0.2s; /*não é necessário utilizar forwards pq a propriedade final do
+    slide-back já é o left:0 */
 } 
 
 #switch button:hover {
@@ -88,7 +89,7 @@ body * {
 }
 
 .light #switch button {
-   animation: slide-in 0.4s forwards;  
+   animation: slide-in 0.4s forwards; /*forwards mantem as propriedades finais do animation*/  
 }
 
 #switch span{
